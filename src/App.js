@@ -1,9 +1,10 @@
-import React, { component } from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import { Navbar, NavbarBrand } from 'reactstrap';
+import Menu from './components/MenuComponent.js'
 import './App.css';
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div className="App">
@@ -12,6 +13,7 @@ class App extends React.Component {
             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
           </div>
         </Navbar>
+        <Menu/>
       </div>
     );
   }
