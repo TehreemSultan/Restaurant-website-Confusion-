@@ -1,6 +1,5 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle} from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 
 function RenderCard({item}) {
 
@@ -8,9 +7,9 @@ function RenderCard({item}) {
         <Card>
             <CardImg src={item.image} alt={item.name} />
             <CardBody>
-            <CardText>{item.name}</CardText>
+            <CardTitle>{item.name}</CardTitle>
             {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
-            <CardTitle>{item.description}</CardTitle>
+            <CardText>{item.description}</CardText>
             </CardBody>
         </Card>
     );
