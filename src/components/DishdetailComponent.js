@@ -1,6 +1,7 @@
 import React from 'react';
 import {Card, CardImg, CardTitle, CardText, CardBody, Breadcrumb, BreadcrumbItem} from 'reactstrap';
 import {Link} from 'react-router-dom';
+import ModalExample from './CommentFormComponent';
 
 
 
@@ -54,7 +55,8 @@ const DishDetail = (props) => {
                 </div>
        <div className="row">
               <div className="col-12 col-md-5 m-1">{renderDish(props.dish)}</div>
-              <div className="col-12 col-md-5 m-1">{renderComments(props.comments)}</div>
+              <div className="col-12 col-md-5 m-1">{renderComments(props.comments)}
+              </div>
        </div>
        </div>
        );
